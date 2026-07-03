@@ -1,0 +1,254 @@
+
+@font-face {
+	font-family: cabin;
+	src: url(http://surun.co/cart1.2/fonts/PontanoSans-Regular.ttf);
+}
+
+body {
+	font-family: cabin;
+	font-size: 14px;
+}
+p{
+	color: #000;
+	line-height: 22px;
+	font-family: cabin;
+}
+.mt-0 {
+	margin-top: 0;
+}
+.pdf-header {
+	background: #BDD6EE;
+}
+table tr th, table tr td {
+	font-size: 13px;
+	padding: 5px 8px;
+}
+table tr th {
+	font-weight: normal;
+}
+.headering {
+	float: left;
+	width: 100%;
+	padding: 5px 5px;
+	color: #0D21FF;
+	font-size: 10px;
+	font-weight: bold;
+}
+.pdf-header .headering h3 {
+	color: #fff;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+	text-transform: capitalize;
+}
+.logo-div {
+	float: right;
+	width: 65%;
+}
+.complete {
+	width: 100%;
+	border-bottom: 2px solid #0D21FF;
+	margin-bottom: 5px;
+}
+.clear {
+	clear: both;
+}
+.pdf-header-bottom {
+	background: #FFFF00;
+}
+.pdf-header-bottom {
+	color: #2e5396;
+	font-weight: bold;
+	padding: 10px;
+}
+.day_night {
+	float: left;
+	width: 20%;
+	font-size: 10px;
+}
+.city-names {
+	float: right;
+	width: 70%;
+	text-align: right;
+	font-size: 10px;
+}
+.title {
+	text-align: center;
+	margin: 20px 20px;
+	color: #1E4D78;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.pdfcontent {
+	margin: 20px 0px;
+	font-size: 10px;
+}
+
+.subsection {
+	background: #BDD6EE;
+}
+
+.subsection {
+	background: #BDD6EE;
+	margin-bottom: 10px;
+}
+
+.subsection-header {
+	float: left;
+	width: 20%;
+	/* color: #000;    */
+	background: #BDD6EE;
+	padding: 3px;
+	color: #545454;
+	font-weight: bold
+}
+
+.subsection-content {
+	padding: 3px 10px;
+	width: 70%;
+	float: left;
+	color: #303030;
+}
+
+.details-table tr td {
+	font-size: 10px !important;
+	font-weight: normal !important;
+	padding-left: 1% !important;
+}
+
+.details-table th {
+	background: #F1F1F1;
+	color: #000;
+}
+
+.details-table {
+	border-spacing: 0;
+	margin-bottom: 25px;
+	width: 100%;
+	font-size: 12px !important;
+}
+
+.yellow-header {
+	background: #FFFF00;
+	padding: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+img {
+	float: left;
+	width: 200px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.footer_container {
+	padding: 10px;
+	background: #0099CC;
+}
+
+.footer_container h3 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.left-side {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+}
+.right-side {
+	text-align: center;
+	width: 100%;
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+}
+.footer_container h3 span {
+	color: #78BC55;
+}
+.footer_container h3 {
+	color: #F8D20A;
+}
+.email {
+	font-size: 10px;
+}
+.header-container {
+	float: right;
+	width: 100px;
+}
+.pagenaumber {
+	font-size: 10px;
+	text-align: center;
+}
+.lifetile{
+	color: gray !important;
+	/* font-family: presdntn !important;   */
+}
+.lifetile {
+	font-size: 10px;
+	font-weight: normal;
+	margin: 0px 0 0;
+	padding: 0;
+	color: #4654FA
+}
+.maindiv {
+	padding: 2%;
+}
+.mb20 {
+	width: 15%!important;
+	float: left
+}
+.w100 {
+	width: 100%
+}
+.inside1,
+.inside2,
+.inside3 {
+	height: 50px;
+	width: 50px;
+}
+.inline {
+	display: inline;
+	float: left;
+}
+.bordert table,
+.bordert td {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+.dec {
+	font-size: 10px;
+}
+.add {
+	font-size: 12px;
+	padding: 0px 10px 0px 10px;
+}
+.head {
+	text-align: right;
+	right: 0px;
+}
+.header {
+	border-bottom: 1px solid #ddd;
+}
+.compdet {
+	margin-top: 10px;
+}
+.headingtr {
+	background-color: #E5E6E6;
+}
+.sub-title {
+	margin-bottom: 0px !important;
+}
+.landlorddetails,
+.tenentdetails {
+	list-style: none;
+	padding-left: 0;
+}
+.text-bold {
+	font-weight: 600;
+	color: #F24259;
+}

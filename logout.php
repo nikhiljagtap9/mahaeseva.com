@@ -1,0 +1,1 @@
+<?php include("includes/configuration.php"); unset($_SESSION["reguser"]); unset($_SESSION['staff']); unset($_SESSION['post']); unset($_SESSION['dept']); unset($_SESSION['staffname']); unset($_SESSION['acc_type']); unset($_SESSION['uname']); session_destroy(); echo '<script> window.location="'.SITEURL.'";</script>'; ?>

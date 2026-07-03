@@ -1,0 +1,440 @@
+body{
+  background-color: #f6f6f6;
+}
+
+a:active, a:focus{
+  outline: 0 !important;
+}
+
+.fillHeader {
+  background-color: #fff;
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -o-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -ms-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
+}
+
+.navigation{
+  border-top: 1px solid #00988d;
+}
+
+.headerRight > li > a{
+    color:#000;
+}
+
+.headerRight .nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent !important;
+    color: #c93438 !important;
+}
+
+.headerRight .nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+    background-color: #00a59a !important;
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -ms-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  background-color: #fff;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+.borderTop0{
+  border-top:0 !important;
+}
+
+.margin0{
+  margin: 0 !important;
+}
+
+.paddRight{
+  padding-right: 0;
+}
+
+.paddLift{
+  padding-left: 0 !important;
+}
+
+.deviderPadd{
+  margin: 15px 0 23px 0;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.btnPrimary {
+  background-color: #00a859;
+  color: #fff;
+  border-color: #00a859;
+}
+
+.panelHead h4{
+  margin-top: 15px;
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.logoutbtn{
+  color: #fff;
+}
+
+.header{
+  padding: 14px 0;
+}
+
+.header .logo{
+  padding-top: 6px;
+}
+
+.stepIcon{
+  margin-bottom: 12px;
+}
+
+.stepIcon .fa{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.navigation .nav li a{
+  border-bottom: 3px solid transparent;
+}
+
+.navigation .nav li a:hover, .navigation .nav > li > a:focus{
+  border-color: #c93438;
+  background-color: transparent;
+}
+
+.activeborder{
+  border-color: #c93438 !important;
+  background-color: transparent;
+}
+
+.headtitle{
+  color: #fff;
+}
+
+.fa-user{
+  margin-right: 7px;
+}
+
+#myNavbar .nav li a{
+  color:#000;
+}
+
+.fillHeader .dropdown-toggle{
+  color:#000;
+  cursor: pointer;
+}
+
+.navbar .navbar-collapse {
+  border-top: 1px solid #26c7ec;
+}
+
+.mainbody {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 30px 0;
+}
+
+.mute-text {
+  color: #757575;
+}
+
+.pageHead{
+  margin-bottom: 28px;
+}
+
+table{
+  font-size: 14px;
+}
+
+.bg-success {
+  padding: 8px 15px;
+}
+
+.bg-info {
+  padding: 8px 15px;
+}
+
+.commentbox {
+  border: 1px solid #E0E0E0;
+  padding: 15px 15px;
+  line-height: 23px;
+}
+
+.commentbox .destform{
+  margin-top: 20px;
+}
+
+.ticket-thread .list-view{
+  margin-bottom: 15px;
+}
+
+.list-view{
+  margin-bottom: 15px;
+}
+
+.attachbox {
+  padding: 10px;
+  background: #E3E3E3;
+}
+
+.footer {
+  background-color: #C05162;
+  padding: 14px 0;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+#leadno{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+
+  .navbar-toggle{
+    color: #fff;
+  }
+
+  .panelHead h4{
+    margin-bottom: 15px;
+  }
+}
+
+.tktform .form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+.form-control {
+  height: 39px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+.form-group .input-group-addon{
+  border-radius: 0;
+  border: 1px solid #ccc;
+  border-left: 0;
+}
+
+table input{
+  font-weight: 300;
+}
+
+.plr{
+  padding-left: 10px  !important;
+  padding-right: 10px !important;
+}
+
+.panel-heading{
+  border-bottom: 1px solid #e8e8e8;
+  background: #49648c;
+}
+
+.panel-heading .panel-title{
+  color: #fff;
+}
+
+.tab-content{
+  padding-top: 20px;
+}
+
+.addnew .fa, .search .fa{
+  margin-right: 10px;
+}
+
+.addNewGuest .nav-tabs li.active a{
+  background-color: #f6f6f6;
+  color:#00a59a !important;
+}
+
+.addNewGuest .nav-tabs li{
+  width: 50%;
+  text-align: center;
+}
+
+.addNewGuest .nav-tabs li a {
+  padding: 14px 19px;
+}
+
+#attach{
+    margin-top:15px;
+}
+
+@media screen and (max-width: 767px) {
+  #myNavbar{
+    float: left !important;
+    padding-right: 17px;
+  }
+}
+
+.guestDetails label{
+  width: 46%;
+}
+
+@media screen and (max-width: 767px) {
+
+.searchGuest *{
+    display: inline-block;
+}
+
+.searchGuest .form-group{
+    margin-bottom: 6px !important;
+}
+
+.header {
+    padding-bottom: 0;
+}
+
+.header .logo {
+    padding-top: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.header .logo img{
+    padding-bottom: 16px;
+}
+
+.headerRight{
+    float: left !important;
+    padding-left: 12px;
+}
+
+.headerRight li{
+    float: left;
+}
+
+
+}
+@media screen and (max-width: 767px) {
+.addNewGuest .nav-tabs li {
+    width: auto;
+}
+
+.rightBtn{
+    float: none !important;
+    clear: both;
+}
+
+.importIdent #PANCard{
+    margin-bottom: 15px;
+}
+
+.importIdent .form-group label{
+    width:100% !important;
+}
+
+}
+
+/* Document Attach */
+.documentattch .documentthumb {
+  width: 120px;
+  height: 120px;
+  background: #ececec;
+  overflow: hidden;
+  margin: auto;
+}
+.documentattch #dealerform .fileAttach {
+  padding: 0;
+  height: 39px;
+  border: none;
+  margin-top: 17px;
+}
+.browsFile svg {
+  fill: #fff;
+  margin-right: 6px;
+  width: 14px;
+}
+.browsFile p {
+  margin-bottom: 0;
+  line-height: 23px;
+  font-size: 13px;
+}
+.fileAttach {
+  display: none !important;
+}
+.documentattch .browsFile {
+  margin: auto;
+  display: block;
+}
+.browsFile {
+  width: 122px;
+border-radius: 2px;
+background-color: #e44a5d;
+padding: 5px 13px;
+cursor: pointer;
+color: #fff;
+line-height: 25px;
+margin-bottom: 0;
+vertical-align: middle;
+margin-left: 8px;
+}
+.browsFile .uploadBtn {
+  width: auto;
+  height: 33px;
+  border-radius: 4px;
+  background-color: #e44a5d;
+  display: block;
+  position: relative;
+  padding: 5px 13px;
+  margin: 10px auto 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.attchFileName {
+  margin-top: 25px;
+  margin-left: 7px;
+}
+
+.proofThumb{
+  width: 140px;
+  height: 140px;
+  margin: auto;
+}
+
+.proofThumb img{
+    max-height: 100%;
+}
+
+.importIdent .form-group{
+    width: 100%;
+}
+
+.importIdent .form-group label{
+    width:20%;
+}
+
+/* Document Attach */
+
+.bg-red
+{
+   padding:5px;
+   background: #FFE5E5
+}
+
+.bg-orange
+{
+    padding:5px;
+     background: #FFF486
+}
+
+.bg-green
+{
+   padding:5px;
+    background: #AFF3B3
+}

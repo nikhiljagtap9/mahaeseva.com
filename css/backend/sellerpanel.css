@@ -1,0 +1,66 @@
+.dashbodyonly{
+  padding-top: 70px;
+}
+
+.mainbody {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.packageday{
+  margin-right: 20px;
+}
+
+.addProduct .card {
+  padding: 29px 0;
+  min-height: 120px;
+}
+
+.addProduct h4{
+    margin-bottom:0;
+}
+
+.addProduct .fa{
+    font-size: 30px;
+}
+
+.addProduct a {
+  color: #fff;
+}
+
+.addProduct a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 531px) {
+    .changepos { display: flex; flex-flow: column; position:relative;}
+    .variantbox { order: 1; }
+    .inventproduct { order: 2 }
+}
+
+.img200 {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.prod {
+  min-height: 294px;
+  margin-bottom: 19px;
+}
+
+.product-thumb {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 13px;
+  width: 100px;
+}
+
+.priceqty label{
+    width: 58px;
+}

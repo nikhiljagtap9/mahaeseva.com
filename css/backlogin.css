@@ -1,0 +1,79 @@
+body{
+  background-color: #f2f2f2 !important;
+}
+
+.btn:focus, button:focus, .a:focus{
+    outline:0 !important;
+}
+
+.loginForm, .contactRequest, .supportlogin{
+    padding-top: 120px;
+}
+
+.header{
+  padding: 20px 0 20px 0;
+}
+
+.header img{
+  margin: auto;
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  -ms-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  background-color: #fff;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+.inputField [type="text"], .inputField [type="password"], .inputField select {
+  height: 42px !important;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #dedede;
+  border-radius: 0 !important;
+}
+
+.primaryColor{
+   color: #C13832;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
+
+.adminLogIn h3{
+    margin: 16px 0;
+}
+
+.btnPrimary{
+  background-color: #00a859;
+  color: #fff;
+  border-color: #00a859;
+}
+
+.mainbody {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 14px 0;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -3px;
+}
