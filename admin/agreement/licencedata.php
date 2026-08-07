@@ -37,6 +37,8 @@
            <h5 class="py-2 text-primary">Witness Details are</h5>
         <div class="vitness_s">
         Name : <span class="vitness_name text-bold"></span> <span class="vitness_lname text-bold"></span>  <br>
+        <span class="witness_dob text-bold" style="display:none;"></span>
+        Age About : <span class="witness_age text-bold"></span> Years <br>
         Mobile : <span class="vitness_mbl text-bold"></span>  <br>
         Adress : <span class="vitness_address text-bold"></span><br>
         Email : <span class="vitness_email text-bold"></span>

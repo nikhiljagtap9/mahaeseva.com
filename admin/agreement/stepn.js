@@ -40,6 +40,8 @@ if($(".vitnessform").css('display') == 'none')
 $(".vitnessform").show();
   var str= '<li class="vitness_s current"> ' +
         'Name : <span class="vitness_name text-bold"></span> <span class="vitness_lname text-bold"></span>  <br>'+
+        '<span class="witness_dob text-bold" style="display:none;"></span>'+
+        'Age About : <span class="witness_age text-bold"></span> Years <br>'+
         'Mobile : <span class="vitness_mbl text-bold"></span>  <br>'+
         'Adress : <span class="vitness_address text-bold"></span><br>'+
         'Email : <span class="vitness_email text-bold"></span>'+
@@ -47,6 +49,8 @@ $(".vitnessform").show();
     $(".vitnessdetailsinlicence").append(str);   
     $(".v_name").val(""); 
     $(".v_lname").val("");
+    $(".witnessdob").val("");
+    $(".witnessage").val("");
     $(".v_emailid").val("");  
     $(".v_mobno").val("");   
     $(".vitnessaddr").val("");
@@ -56,10 +60,12 @@ $(".vitnessform").show();
            
    vitnessname =  $(".v_name").val(); 
    vitnesslname =  $(".v_lname").val();
+   witnessdob =  $(".witnessdob").val();
+   witnessage =  $(".witnessage").val();
    vitnessemail =  $(".v_emailid").val();  
    vitnessmobile =  $(".v_mobno").val();    
     vitnessadress =  $(".vitnessaddr").val();   
-    if(vitnessname == "" && vitnesslname =="" && vitnessemail == ""  && vitnessmobile == "" && vitnessadress == ""){
+    if(vitnessname == "" && vitnesslname =="" && witnessdob == "" && witnessage == "" && vitnessemail == ""  && vitnessmobile == "" && vitnessadress == ""){
       $('.msgs').fadeIn();
                            $('.msgs').removeClass('alert alert-success');
                           $('.msgs').addClass('alert alert-danger');
@@ -78,6 +84,8 @@ $(".vitnessform").show();
                       
         var str= '<li class="vitness_s current"> ' +
         'Name : <span class="vitness_name text-bold"></span> <span class="vitness_lname text-bold"></span>  <br>'+
+        '<span class="witness_dob text-bold" style="display:none;"></span>'+
+        'Age About : <span class="witness_age text-bold"></span> Years <br>'+
         'Mobile : <span class="vitness_mbl text-bold"></span>  <br>'+
         'Adress : <span class="vitness_address text-bold"></span><br>'+
         'Email : <span class="vitness_email text-bold"></span>'+
@@ -85,6 +93,8 @@ $(".vitnessform").show();
                     $("."+nemclas).after(str);
         $(".v_name").val(""); 
     $(".v_lname").val("");
+    $(".witnessdob").val("");
+    $(".witnessage").val("");
     $(".v_emailid").val("");  
     $(".v_mobno").val("");   
     $(".vitnessaddr").val("");
@@ -101,6 +111,8 @@ function editvitness(getdetailsclass,hidediv,showdiv,btn1,btn2){
     $("."+showdiv).show();
     var name=$("."+getdetailsclass+" .vitness_name").html();
     var lastname=$("."+getdetailsclass+" .vitness_lname").html();
+    var witnessdob=$("."+getdetailsclass+" .witness_dob").html();
+    var witnessage=$("."+getdetailsclass+" .witness_age").html();
     var email=$("."+getdetailsclass+" .vitness_email").html();
     var mobile=$("."+getdetailsclass+" .vitness_mbl").html();
      var adress=$("."+getdetailsclass+" .vitness_address").html();
@@ -108,6 +120,8 @@ function editvitness(getdetailsclass,hidediv,showdiv,btn1,btn2){
       $(".updateclassnamev").val(getdetailsclass);
     $(".editvitnessname").val(name);
      $(".editvitnesslastname").val(lastname);
+     $(".editwitnessdob").val(witnessdob);
+     $(".editwitnessage").val(witnessage);
       $(".editvitnessemail").val(email);
        $(".editvitnessmbl").val(mobile);
         $(".editvitnessadress").val(adress);
@@ -118,6 +132,8 @@ function updatevitness(show1,show2){
     updateclassnamev=$(".updateclassnamev").val();
     editvitnessname = $(".editvitnessname").val();
     editvitnesslastname = $(".editvitnesslastname").val();
+    editwitnessdob = $(".editwitnessdob").val();
+    editwitnessage = $(".editwitnessage").val();
     editvitnessemail = $(".editvitnessemail").val();
     editvitnessmbl = $(".editvitnessmbl").val();
     editvitnessadress = $(".editvitnessadress").val(); 
@@ -125,6 +141,8 @@ function updatevitness(show1,show2){
     
     $("."+updateclassnamev+" .vitness_name").html(editvitnessname);
     $("."+updateclassnamev+" .vitness_lname").html(editvitnesslastname);
+    $("."+updateclassnamev+" .witness_dob").html(editwitnessdob);
+    $("."+updateclassnamev+" .witness_age").html(editwitnessage);
     $("."+updateclassnamev+" .vitness_email").html(editvitnessemail);
     $("."+updateclassnamev+" .vitness_mbl").html(editvitnessmbl);
     $("."+updateclassnamev+" .vitness_address").html(editvitnessadress);

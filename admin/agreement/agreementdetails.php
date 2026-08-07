@@ -48,11 +48,11 @@
                             <div class="col-7 col-sm-12 col-md-12 col-lg-7"><?php if($agreement[0]['govt_reg_no']!=""){ echo $agreement[0]['govt_reg_no'];} else{ echo "-"; } ?></div>
                         </div>
                         <div class="form-group mb-2 row col-sm-6 col-md-6">
-                            <div class="col-5 col-sm-12 col-md-12 col-lg-5 control-label cc-font-weight-5"><b>GRN For Stamp Duty</b></div>
+                            <div class="col-5 col-sm-12 col-md-12 col-lg-5 control-label cc-font-weight-5"><b>GRN for Stamp Duty & Reg. fee</b></div>
                             <div class="col-7 col-sm-12 col-md-12 col-lg-7"><?php if($agreement[0]['grn_for_stamp_duty']!=""){ echo $agreement[0]['grn_for_stamp_duty']; } else{ echo "-"; } ?></div>
                         </div>
                         <div class="form-group mb-2 row col-sm-6 col-md-6">
-                            <div class="col-5 col-sm-12 col-md-12 col-lg-5 control-label cc-font-weight-5"><b>GRN For Reg. Fee</b></div>
+                            <div class="col-5 col-sm-12 col-md-12 col-lg-5 control-label cc-font-weight-5"><b>PRN for DHC</b></div>
                             <div class="col-7 col-sm-12 col-md-12 col-lg-7"><?php if($agreement[0]['grn_for_reg_fee']!=""){ echo $agreement[0]['grn_for_reg_fee']; } else{ echo "-"; } ?></div>
                         </div>
                     </div>
@@ -387,6 +387,12 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header sec-card-head justify-content-between align-items-center col-12"><div><h2 class="card-head-title">Miscellaneous</h2></div></div>
+                <div class="card-body">
+                    <?php if(trim($agreement[0]['miscellaneous'])!=""){ echo nl2br(htmlspecialchars($agreement[0]['miscellaneous'])); } else{ echo "-"; } ?>
                 </div>
             </div>
             <div class="row">

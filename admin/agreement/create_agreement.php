@@ -94,6 +94,25 @@ $("#datepicker1").datetimepicker({
         console.log(selectedDate); // Logs the selected date
     }
 });
+$("#witnessdatepicker").datetimepicker({
+    format: 'DD/MM/YYYY' })
+    .on('dp.change', function (e) {
+    const selectedDate = e.date ? e.date.format('DD/MM/YYYY') : null;
+    if (selectedDate) {
+        $(".vitnessdetailsinlicence .current .witness_dob").html(selectedDate);
+        age = calculateAge(selectedDate);
+        $('#witnessage').val(age);
+        showvalinput('witnessage','witness_age');
+    }
+});
+$("#editwitnessdatepicker").datetimepicker({
+    format: 'DD/MM/YYYY' })
+    .on('dp.change', function (e) {
+    const selectedDate = e.date ? e.date.format('DD/MM/YYYY') : null;
+    if (selectedDate) {
+        $('#editwitnessage').val(calculateAge(selectedDate));
+    }
+});
 function calculateAge(dob) {
     let dobArray = dob.split('/');
     let birthDate = new Date(dobArray[2], dobArray[1] - 1, dobArray[0]);

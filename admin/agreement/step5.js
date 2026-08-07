@@ -201,12 +201,16 @@ function finalproceed(siteurl)
                     {
                         var vitness_name=$(this).children('.vitness_name').html();
                         var vitness_lname=$(this).children('.vitness_lname').html();
+                        var witness_dob=$(this).children('.witness_dob').html();
+                        var witness_age=$(this).children('.witness_age').html();
                         var vitness_mbl=$(this).children('.vitness_mbl').html();
                         var vitness_email=$(this).children('.vitness_email').html();
                         var vitness_address=$(this).children('.vitness_address').html();
                         var form_datan = new FormData();
                         form_datan.append('vitness_name',vitness_name);
                         form_datan.append('vitness_lname',vitness_lname);
+                        form_datan.append('witness_dob',witness_dob);
+                        form_datan.append('witness_age',witness_age);
                         form_datan.append('vitness_mbl',vitness_mbl);
                         form_datan.append('vitness_email',vitness_email);
                         form_datan.append('vitness_address',vitness_address);
@@ -423,5 +427,7 @@ $(".toggle-header").click(function () {
     $(this).find(".toggle-icon").toggleClass("fa-plus fa-minus"); // Toggle icon
 });
 
-$(".toggle-content").hide(); // Hide content by default
+// Keep both additional-service accordions open by default.
+$(".toggle-content").show();
+$(".toggle-header .toggle-icon").removeClass("fa-plus").addClass("fa-minus");
 
