@@ -132,7 +132,7 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="form-group">
                         <label>Miscellaneous</label>
-                        <input type='textarea' name="misc" class="form-control misc" id='misc' onkeyup="othershowvalinput('misc','miscshow')" maxlength="1000"/>
+                        <input type='textarea' name="misc" class="form-control misc" id='misc' maxlength="1000" onkeyup="othershowvalinput('misc','miscshow')" maxlength="1000"/>
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12 newxt23btn d-flex justify-content-between">
