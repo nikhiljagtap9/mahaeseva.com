@@ -1,7 +1,7 @@
 <?php define('HOST',"localhost");
 define('DATABASE',"newmysurun_mahaeseva");
 define('USERNM',"newmysurun_megadb");
-define('PASSWRD',"AqWlc[GNb%g0a");
+define('PASSWRD',"#ackwe@gaindud9");
 define('AGR',"agreement");
 define('AGR_LANDLORD',"agreement_landlord");
 define('AGR_TENENT',"agreement_tenent");
