@@ -199,13 +199,23 @@
  
  
  if($action == "add_vitness"){
+     $agrrementno = $_REQUEST['agrrementno'];
+     $vitness_name = $_REQUEST['vitness_name'];
+     $vitness_lname = $_REQUEST['vitness_lname'];
+     $witness_dob = $_REQUEST['witness_dob'];
+     $witness_age = $_REQUEST['witness_age'];
+     $vitness_mbl = $_REQUEST['vitness_mbl'];
+     $vitness_email = $_REQUEST['vitness_email'];
+     $vitness_address = $_REQUEST['vitness_address'];
      
-     if($vitness_name == ""  && $vitness_lname == "" && $vitness_mbl == "" && $vitness_email == ""  && $vitness_address == ""){}
-     else if($vitness_name == "undefined"  && $vitness_lname == "undefined" && $vitness_mbl == "undefined" && $vitness_email == "undefined"  && $vitness_address == "undefined"){ }
+     if($vitness_name == ""  && $vitness_lname == "" && $witness_dob == "" && $witness_age == "" && $vitness_mbl == "" && $vitness_email == ""  && $vitness_address == ""){}
+     else if($vitness_name == "undefined"  && $vitness_lname == "undefined" && $witness_dob == "undefined" && $witness_age == "undefined" && $vitness_mbl == "undefined" && $vitness_email == "undefined"  && $vitness_address == "undefined"){ }
      else {
       $vitness=array(
      "agreement_no"=> base64_decode($agrrementno),
     "vitness_name"  => $vitness_name." ".$vitness_lname,
+    "witness_dob" => $witness_dob,
+    "witness_age" => $witness_age,
     "vitness_mbl" => $vitness_mbl,
     "vitness_email" => $vitness_email,    
     "vitness_address" => $vitness_address      

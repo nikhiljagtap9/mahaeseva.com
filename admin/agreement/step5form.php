@@ -1,12 +1,12 @@
 <h4 class="mb-3"><b>Additional Services</b></h4>
 
-<div class="col-md-12">
+<div class="col-md-12" style="display:none">
     <div class="row">
         <div class="col-12">
-            <div class="form-group"><input type='checkbox' name="policeintimation" class="policeintimation" id='policeintimation' value="1"> Police Inimation Required ?</div>
+            <div class="form-group"><input type='checkbox' name="policeintimation" class="policeintimation" id='policeintimation' value="1" checked> Police Inimation Required ?</div>
         </div>
         <div class="col-12">
-            <div class="form-group"><input type='checkbox' name="extravisit" class="extravisit" id='extravisit' value="1"> Extra Visit Required (Landlord and Tenant staying at different place) ?</div>
+            <div class="form-group"><input type='checkbox' name="extravisit" class="extravisit" id='extravisit' value="1" checked> Extra Visit Required (Landlord and Tenant staying at different place) ?</div>
         </div>
     </div>
 </div>
@@ -45,11 +45,11 @@
             <div class="toggle-content">
                 <div class="col-12">
                     <input type="radio" name="biometric" value="same_place" id="same_place" checked>
-                    <label for="same_place">Tenant and Landlord at same place for biometric appointment.</label>
+                    <label for="same_place">Landlord and tenant are present at the same location for the biometric appointment.</label>
                 </div>
                 <div class="col-12">
                     <input type="radio" name="biometric" value="different_place" id="different_place">
-                    <label for="different_place">Tenant and Landlord at different place for biometric appointment.</label>
+                    <label for="different_place">Landlord and tenant are present at different locations for the biometric appointment.</label>
                 </div>
 
               <!-- Package Selection -->
@@ -65,7 +65,7 @@
                                 <input type="checkbox" class="package-check" id="package1">
                                 <label for="package1">
                                     <strong>₹301/-</strong>
-                                    <p>Both parties are in different locations but in the same city.</p>
+                                    <p>Both parties are located at different places within the same city.</p>
                                 </label>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                                 <input type="checkbox" class="package-check" id="package2">
                                 <label for="package2">
                                     <strong>₹693/-</strong>
-                                    <p>One party in property city, other in Maharashtra.</p>
+                                    <p>One party is located in the property city, while the other is located within the state of Maharashtra.</p>
                                 </label>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                 <input type="checkbox" class="package-check" id="package3">
                                 <label for="package3">
                                     <strong>1889/-</strong>
-                                    <p>One party in property city, other outside Maharashtra but in India</p>
+                                    <p>One party is located in the property city, while the other is located in another state within India.</p>
                                 </label>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                                 <input type="checkbox" class="package-check" id="package4">
                                 <label for="package4">
                                     <strong>3000/-</strong>
-                                    <p>One party in property city, other outside India</p>
+                                    <p>One party is located in the property city, while the other is located outside India.</p>
                                 </label> 
                             </div>
                         </div>

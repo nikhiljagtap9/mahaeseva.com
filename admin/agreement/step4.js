@@ -1,6 +1,6 @@
  $(function () {
         $("#startdate").datetimepicker({
-        format: 'DD-MM-YYYY HH:mm',
+            format: 'DD/MM/YYYY'
         })
         .on('dp.change', function(ev){
             startdate=$(this).val();
@@ -46,6 +46,11 @@
                 }
             });
         }
+    }
+    function safeFloat(value)
+    {
+        value = parseFloat(value);
+        return isNaN(value) ? 0 : value;
     }
     function checkabovedata()
     {
@@ -254,14 +259,12 @@
          dhc = $("#dhc").val();
           if(durationval!=""&&depositeval!=""&&fixedrentval!="")
           {
-              totalinamt= fixedrentval* durationval;
-              depo10=(depositeval/100)*10;
-              tax=parseInt(totalinamt)+parseInt(depo10);
-              stamp= (tax*0.25)/100;
-               rval=Math.round(stamp);
-              roundup= roundUp(rval);
-               totalchrgs= parseInt(roundup)+parseInt(service)+parseInt(arealoc)+parseInt(visit_charge)+parseInt(xtra_visit_charge)+parseInt(police_charge)+parseInt(dhc);
-              $(".stamp").val(roundup);
+               totalinamt= safeFloat(fixedrentval)* safeFloat(durationval);
+               depo10=(safeFloat(depositeval)/100)*10;
+               tax=safeFloat(totalinamt)+safeFloat(depo10);
+              stamp= ((tax*0.25)/100).toFixed(2);
+               totalchrgs= (safeFloat(stamp)+safeFloat(service)+safeFloat(arealoc)+safeFloat(visit_charge)+safeFloat(xtra_visit_charge)+safeFloat(police_charge)+safeFloat(dhc)).toFixed(2);
+              $(".stamp").val(stamp);
               $(".regfee").val(arealoc);
               $(".total").val(totalchrgs);
               $("."+duration).attr("disabled",true);
@@ -303,14 +306,12 @@
           finalval=parseInt(finalval)+(parseInt(rent)*parseInt(dura));
         });
            totalinamt= finalval;
-              depo10=(depositeval/100)*10;
-              tax=parseInt(totalinamt)+parseInt(depo10);
-              stamp= (tax*0.25)/100;
-               rval=Math.round(stamp);
-              roundup= roundUp(rval);
-             totalchrgs= parseInt(roundup)+parseInt(service)+parseInt(arealoc)+parseInt(visit_charge)+parseInt(xtra_visit_charge)+parseInt(police_charge)+parseInt(dhc);
+              depo10=(safeFloat(depositeval)/100)*10;
+              tax=safeFloat(totalinamt)+safeFloat(depo10);
+              stamp= ((tax*0.25)/100).toFixed(2);
+             totalchrgs= (safeFloat(stamp)+safeFloat(service)+safeFloat(arealoc)+safeFloat(visit_charge)+safeFloat(xtra_visit_charge)+safeFloat(police_charge)+safeFloat(dhc)).toFixed(2);
              /* $(".regfee").val(stamp);   */
-              $(".stamp").val(roundup);
+              $(".stamp").val(stamp);
               $(".regfee").val(arealoc);
               $(".total").val(totalchrgs);
               $("."+duration).attr("disabled",true);
@@ -516,12 +517,16 @@
                         {
                             var vitness_name=$(this).children('.vitness_name').html();
                             var vitness_lname=$(this).children('.vitness_lname').html();
+                            var witness_dob=$(this).children('.witness_dob').html();
+                            var witness_age=$(this).children('.witness_age').html();
                             var vitness_mbl=$(this).children('.vitness_mbl').html();
                             var vitness_email=$(this).children('.vitness_email').html();
                             var vitness_address=$(this).children('.vitness_address').html();
                             var form_datan = new FormData();
                             form_datan.append('vitness_name',vitness_name);
                             form_datan.append('vitness_lname',vitness_lname);
+                            form_datan.append('witness_dob',witness_dob);
+                            form_datan.append('witness_age',witness_age);
                             form_datan.append('vitness_mbl',vitness_mbl);
                             form_datan.append('vitness_email',vitness_email);
                             form_datan.append('vitness_address',vitness_address);

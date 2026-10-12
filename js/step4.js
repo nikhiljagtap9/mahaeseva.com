@@ -91,6 +91,11 @@ function addtr(currinp,preinp,rowclass,tableclass,liclass,lispan2,rent){
         }
     }
 }
+function safeFloat(value)
+{
+    value = parseFloat(value);
+    return isNaN(value) ? 0 : value;
+}
 function chkprev(monthto1,currval,showclass){
     var duration = $("#duration").val();
     toval = $("#"+monthto1).val();
@@ -117,8 +122,12 @@ function calculatefixed(fixedrent,duration,deposite){
         $(".policebox").hide(); police_charge=0;
     }
     if(durationval!=""&&depositeval!=""&&fixedrentval!=""){
-        totalinamt = fixedrentval* durationval; depo10 = (depositeval/100)*10; tax = parseInt(totalinamt)+parseInt(depo10); stamp = (tax*0.25)/100; rval = Math.round(stamp); roundup1 = roundUp(rval); totalchrgs = parseInt(roundup1)+parseInt(service)+parseInt(arealoc)+parseInt(visit_charge)+parseInt(xtra_visit_charge)+parseInt(police_charge)+parseInt(dhc);
-        $(".stamp").val(roundup1); $(".regfee").val(arealoc); $(".total").val(totalchrgs); $("."+duration).attr("disabled",true); $("."+deposite).attr("disabled",true); $("."+fixedrent).attr("disabled",true); $(".renttype").attr("disabled",true);
+        totalinamt= safeFloat(fixedrentval)* safeFloat(durationval);
+        depo10=(safeFloat(depositeval)/100)*10;
+        tax=safeFloat(totalinamt)+safeFloat(depo10);
+        stamp= ((tax*0.25)/100).toFixed(2);
+        totalchrgs= (safeFloat(stamp)+safeFloat(service)+safeFloat(arealoc)+safeFloat(visit_charge)+safeFloat(xtra_visit_charge)+safeFloat(police_charge)+safeFloat(dhc)).toFixed(2);
+        $(".stamp").val(stamp); $(".regfee").val(arealoc); $(".total").val(totalchrgs); $("."+duration).attr("disabled",true); $("."+deposite).attr("disabled",true); $("."+fixedrent).attr("disabled",true); $(".renttype").attr("disabled",true);
     }
 }
 function calculatevar(duration,deposite,olclass,liclass,spanrent,spandura){
@@ -139,13 +148,11 @@ function calculatevar(duration,deposite,olclass,liclass,spanrent,spandura){
         endon = res[1].trim(); dura = parseInt(endon)-(parseInt(startfrom)-1); finalval = parseInt(finalval)+(parseInt(rent)*parseInt(dura));
     });
     totalinamt = finalval;
-    depo10 = (depositeval/100)*10;
-    tax = parseInt(totalinamt)+parseInt(depo10);
-    stamp = (tax*0.25)/100;
-    rval = Math.round(stamp);
-    roundup1 = roundUp(rval);
-    totalchrgs = parseInt(roundup1)+parseInt(service)+parseInt(arealoc)+parseInt(visit_charge)+parseInt(xtra_visit_charge)+parseInt(police_charge)+parseInt(dhc);
-    $(".stamp").val(roundup1); $(".regfee").val(arealoc); $(".total").val(totalchrgs); $("."+duration).attr("disabled",true); $("."+deposite).attr("disabled",true); $(".renttype").attr("disabled",true);
+    depo10=(safeFloat(depositeval)/100)*10;
+    tax=safeFloat(totalinamt)+safeFloat(depo10);
+    stamp= ((tax*0.25)/100).toFixed(2);
+    totalchrgs= (safeFloat(stamp)+safeFloat(service)+safeFloat(arealoc)+safeFloat(visit_charge)+safeFloat(xtra_visit_charge)+safeFloat(police_charge)+safeFloat(dhc)).toFixed(2);
+    $(".stamp").val(stamp); $(".regfee").val(arealoc); $(".total").val(totalchrgs); $("."+duration).attr("disabled",true); $("."+deposite).attr("disabled",true); $(".renttype").attr("disabled",true);
 }
 function roundUp(value){ return (~~((value + 99) / 100) * 100); }
 function previousstep3(Step3,Step2,pill3,pill2){

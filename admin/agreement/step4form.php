@@ -115,7 +115,7 @@
         <div class="col-md-12 col-sm-12">
             <div class="form-group">
                 <label>Miscellaneous</label>
-                <input type='text' name="misc" class="form-control misc" id='misc' onkeyup="othershowvalinput('misc','miscshow')"/>
+                <input type='text' name="misc" class="form-control misc" id='misc' maxlength="1000" onkeyup="othershowvalinput('misc','miscshow')"/>
             </div>
         </div>
         <div class="col-md-12 col-sm-12 newxt23btn"> <input type="hidden" class="loaderimg" value="<?php echo LOADER; ?>"> <button class="btn btn-secondary prev3" type="button" onclick="previousstep3('Step4','Step3','agrmstep6','agrmstep5')">Previous</button> 

@@ -12,6 +12,14 @@
                 <input type='text' name="v_lname" class="form-control v_lname" id='v_lname' onkeyup="namechk('v_lname');showvalinput('v_lname','vitness_lname')" maxlength="15" placeholder="Last Name" />
             </div>
             <div class="form-group row col-md-6 col-sm-6 mx-0">
+                <label>DOB</label>
+                <input type="text" name="witnessdob" placeholder="Date of Birth" class="form-control witnessdob" id="witnessdatepicker">
+            </div>
+            <div class="form-group row col-md-6 col-sm-6 mx-0">
+                <label>Age</label>
+                <input type='text' name="witnessage" class="form-control witnessage" id='witnessage' onkeyup="numbercheck('witnessage');showvalinput('witnessage','witness_age')" maxlength="2" placeholder="Age" />
+            </div>
+            <div class="form-group row col-md-6 col-sm-6 mx-0">
                 <label>Email</label>
                 <input type='text' name="v_emailid" class="form-control v_emailid" id='v_emailid' onblur="mailchk('v_emailid');showvalinput('v_emailid','vitness_email')" maxlength="70" placeholder="Email" />
             </div>
@@ -41,6 +49,14 @@
             <div class="form-group row col-md-6 col-sm-6 mx-0">
                 <label>Last Name</label>
                 <input type='text' name="editvitnesslastname" class="form-control editvitnesslastname" id='editvitnesslastname' onkeyup="namechk1('editvitnesslastname');" maxlength="50" placeholder="Vitness Last Name" />
+            </div>
+            <div class="form-group row col-md-6 col-sm-6 mx-0">
+                <label>DOB</label>
+                <input type="text" name="editwitnessdob" placeholder="Date of Birth" class="form-control editwitnessdob" id="editwitnessdatepicker">
+            </div>
+            <div class="form-group row col-md-6 col-sm-6 mx-0">
+                <label>Age</label>
+                <input type='text' name="editwitnessage" class="form-control editwitnessage" id='editwitnessage' onkeyup="numbercheck('editwitnessage');" maxlength="2" placeholder="Age" />
             </div>
             <div class="form-group row col-md-6 col-sm-6 mx-0">
                 <label>Email</label>

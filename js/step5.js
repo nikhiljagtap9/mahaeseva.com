@@ -225,5 +225,7 @@ $(".toggle-header").click(function () {
     $(this).find(".toggle-icon").toggleClass("fa-plus fa-minus"); // Toggle icon
 });
 
-$(".toggle-content").hide(); // Hide content by default
+// Keep both additional-service accordions open by default.
+$(".toggle-content").show();
+$(".toggle-header .toggle-icon").removeClass("fa-plus").addClass("fa-minus");
 
