@@ -527,6 +527,7 @@ if($action=="update_appointment"){
         $appodate = date("Y-m-d H:i",strtotime($_REQUEST['appdate']));
         $appdata = array('biometric_appointement_date'=>$appodate);
         $updateapp = updateQuery(AGR,$appdata,"agreement_no='".$id."'");
+        print_r($updateapp);exit;
         if($updateapp){ echo "1"; } else{ echo "0"; }
     } else{ echo "0"; }
 }
@@ -631,11 +632,11 @@ if($action=="chng_status"){
                     <input type='text' name="regno" class="form-control regno" id='regno' maxlength="20" placeholder="" value="<?php echo $agreementdata[0]['govt_reg_no']; ?>"/>
                 </div>
                 <div class="form-group mb-2">
-                    <label for="">GRN. For Reg. Fee</label>
+                    <label for="">PRN for DHC</label>
                     <input type='text' name="grnreg" class="form-control grnreg" id='grnreg' maxlength="20" placeholder="" value="<?php echo $agreementdata[0]['grn_for_reg_fee']; ?>"/>
                 </div>
                 <div class="form-group mb-2">
-                    <label for="">GRN. For Stamp Duty</label>
+                    <label for="">GRN for Stamp Duty & Reg. fee</label>
                     <input type='text' name="grnstamp" class="form-control grnstamp" id='grnstamp' maxlength="20" placeholder="" value="<?php echo $agreementdata[0]['grn_for_stamp_duty']; ?>"/>
                 </div>
             </div>

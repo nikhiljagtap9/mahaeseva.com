@@ -282,6 +282,14 @@
                                                 <div class="col-md-8 col-lg-8 landLordDetails"><?php if($vitness[$i]['vitness_name'] == ""){ echo "NA"; } else{ echo $vitness[$i]['vitness_name']; } ?></div>
                                             </div>
                                             <div class="row">
+                                                    <label class="col-4 col-md-2 landLordDetails">DOB</label>
+                                                    <div class="col-8 col-md-8 landLordDetails"><?php echo $vitness[$i]['witness_dob']; ?></div>
+                                                </div>
+                                                <div class="row">
+                                                    <label class="col-4 col-md-2 landLordDetails">Age</label>
+                                                    <div class="col-8 col-md-8 landLordDetails"><?php echo ($vitness[$i]['witness_age']) ? $vitness[$i]['witness_age']." years" : ''; ?></div>
+                                                </div>
+                                            <div class="row">
                                                 <label class="col-md-4 col-lg-2 landLordDetails">Email</label>
                                                 <div class="col-md-8 col-lg-8 landLordDetails"><?php if($vitness[$i]['vitness_email'] == ""){ echo "NA"; } else{ echo $vitness[$i]['vitness_email']; } ?></div>
                                             </div>
