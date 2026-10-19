@@ -2,7 +2,8 @@
 <?php
 include("../includes/configuration.php");
 $panel="support";
-include("../callapi.php");
+//commented due to domain timeout issue
+//include("../callapi.php");
 
  $getdept=selectQuery(SUPPORTDEPT,"*","isDel='0' and isActive='1'");
 

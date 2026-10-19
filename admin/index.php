@@ -1,4 +1,6 @@
-<?php include("../includes/configuration.php"); $panel="admin"; include("../callapi.php");
+<?php include("../includes/configuration.php"); $panel="admin"; 
+//commented due to domain timeout issue 
+//include("../callapi.php");
 $getsetting = selectQuery(LOGINSETTING,"*"); ?>
 <!DOCTYPE HTML>
 <html lang="en">
