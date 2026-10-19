@@ -1,4 +1,6 @@
-<?php $panel="website"; include("callapi.php");
+<?php $panel="website"; 
+//commented due to domain timeout issue
+//include("callapi.php");
 $loginuserid = $_SESSION['reguser'];
 if($loginuserid!=""){
 $loginuserdetails = selectQuery(WEB_USER,"*","u_id=".$loginuserid." and isActive='1' ");

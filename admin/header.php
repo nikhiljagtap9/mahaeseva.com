@@ -6,7 +6,8 @@ $getusertype = $getid[0]['utype']; $menusupportsetting = selectQuery(SUPPORTEMAI
         <div id="hmenu" class="menubtn"><i class="fa fa-bars"></i></div>
         <div class="logo"><a href="<?php echo SITEURL ?>" target="_blank"><img src="<?php echo SITEURL; ?>/img/projectimage/logo.png" alt="Logo" class="img-fluid logo"/></a></div>
         <ul class="nav justify-content-end user-log-drop">
-            <?php $chplan = curl_init();
+            <?php /*commented due to domain timeout issue
+            $chplan = curl_init();
             curl_setopt($chplan, CURLOPT_URL, "https://www.spanel.surun.in/planapi/".apikey);
             curl_setopt($chplan, CURLOPT_REFERER, SITEURL);
             curl_setopt($chplan, CURLINFO_HEADER_OUT, true);
@@ -27,7 +28,8 @@ $getusertype = $getid[0]['utype']; $menusupportsetting = selectQuery(SUPPORTEMAI
                 echo "<li class='nav-item py-2 d-none d-md-inline-block'>Subscription End  <a href='".ADMINURL."plandetails.php' target='_blank'><span class='label label-danger'>".$diff." </span>Days Ago</a></li>";
             } else if($diff==0){
                 echo "<li class='nav-item py-2 d-none d-md-inline-block'><a href='".ADMINURL."plandetails.php' target='_blank'>Subscription Ends Today</a></li>";
-            } ?>
+            } */
+            ?>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle pr-0 text-dark" id="navbardrop" href="#" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> <span><?php echo $getid[0]['username']; ?></span></a>
                 <div class="dropdown-menu">
                     <?php if($getusertype=='Admin'){

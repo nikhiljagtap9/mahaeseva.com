@@ -1,12 +1,13 @@
 <?php
-    include("../includes/configuration.php");
-    $panel="lms";
-include("../callapi.php");
+  include("../includes/configuration.php");
+  $panel="lms";
+  //commented due to domain timeout issue
+  //include("../callapi.php");
 
-     $menusupportsetting=selectQuery(SUPPORTEMAIL,"*");
-   $attachmentmax=$menusupportsetting[0]['attachment_size'];
-   $allowedimgtypes=$menusupportsetting[0]['img_types'];
-   $allowedapptypes=$menusupportsetting[0]['application_types'];
+  $menusupportsetting=selectQuery(SUPPORTEMAIL,"*");
+  $attachmentmax=$menusupportsetting[0]['attachment_size'];
+  $allowedimgtypes=$menusupportsetting[0]['img_types'];
+  $allowedapptypes=$menusupportsetting[0]['application_types'];
 
 ?>
  <!doctype html>
