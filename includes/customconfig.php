@@ -75,6 +75,6 @@ define ("proparr", serialize (array ("Apartment/Flat","Godown","Land Bldg/Shed",
 define("REVIEWCNTPAGE",8); //used for pagination
 define("BLOGCNTPAGE",8); //used for pagination
 //**********************************Whats app Message**********************************************//
-$appkey="90b0d2ff-1153-40ef-93c8-62a79b3b5537";
-$authkey="kFHWcagqY5d39qjD8z1vKTH9k8LnofUU8UP8TN741K4fqMQQWK";
+$appkey="1c6d4e01-1a8d-41bb-84f5-e0bca15eb3a8";
+$authkey="3obDrw2bDgeeCIzDtQP1bn7hdpnjzGyNH93RNvrFJNjZZRvCoJ";
 ?>
