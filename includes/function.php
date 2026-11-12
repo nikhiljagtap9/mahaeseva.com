@@ -27,8 +27,8 @@ function sendwhatsappsms($to,$message){
 $curl = curl_init();
 
 $data = [
-    "appkey" => "236274fd-8d6a-4b73-a280-0dc78677bb44",
-    "authkey" => "3obDrw2bDgeeCIzDtQP1bn7hdpnjzGyNH93RNvrFJNjZZRvCoJ",
+    "appkey" =>  $appkey,
+    "authkey" =>  $authkey,
     "to" => '91'.$to,
     "message" => $m,
     "sandbox" => false
